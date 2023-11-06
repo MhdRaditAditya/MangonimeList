@@ -11,16 +11,15 @@
 }
 
 img {
-  max-width: 350px;
   width: 100%;
-  max-height: 350px;
-  height: auto;
+  max-height: 380px;
+  height: 100%;
   object-fit: cover;
   transition: 0.3s ease all;
 }
 
 img:hover {
-  scale: 103%;
+  scale: 105%;
 }
 
 .loading {

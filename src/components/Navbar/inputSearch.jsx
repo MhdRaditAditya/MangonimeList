@@ -16,7 +16,7 @@ const InputSearch = () => {
 
       if (keyword == undefined || keyword == null || keyword.trim() == "") {
         toast.error("Make a specifict data", {
-          position: "bottom-left",
+          position: "top-center",
           autoClose: 4000,
           hideProgressBar: false,
           closeOnClick: true,
@@ -34,11 +34,11 @@ const InputSearch = () => {
   };
 
   return (
-    <div className="relative items-center z-0">
+    <div className="relative items-center z-10 md:end-2 end-0 mt-0 ">
       <input
         placeholder="Search..."
         ref={searchRef}
-        className="p-2 rounded md:w-72 w-full"
+        className="p-2 rounded md:w-64 w-full"
         onKeyDown={handleSearch}
       />
       <button onClick={handleSearch} className="absolute top-2 end-2">

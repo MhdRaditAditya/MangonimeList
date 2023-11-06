@@ -1,6 +1,6 @@
-import Animelist from "@/components/Animelist";
-import Header from "@/components/Animelist/header";
-import Mangalist from "@/components/Animelist/manga";
+import Animelist from "@/components/ContentList";
+import Header from "@/components/ContentList/header";
+import Mangalist from "@/components/ContentList/manga";
 import {
   generateRandomData,
   getAnimeResponse,
@@ -8,19 +8,19 @@ import {
 } from "@/libs/api-libs";
 
 const Page = async () => {
-  const topAnime = await getAnimeResponse("top/anime", "limit=8");
-  const topManga = await getAnimeResponse("top/manga", "limit=8");
+  const topAnime = await getAnimeResponse("top/anime", "limit=9");
+  const topManga = await getAnimeResponse("top/manga", "limit=9");
   let recommendedAnime = await getNestedAnimeResponse(
     "recommendations/anime",
     "entry"
   );
-  recommendedAnime = generateRandomData(recommendedAnime, 6);
+  recommendedAnime = generateRandomData(recommendedAnime, 7);
 
   let recommendedManga = await getNestedAnimeResponse(
     "recommendations/manga",
     "entry"
   );
-  recommendedManga = generateRandomData(recommendedManga, 6);
+  recommendedManga = generateRandomData(recommendedManga, 7);
 
   return (
     

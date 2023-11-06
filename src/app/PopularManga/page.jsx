@@ -1,6 +1,6 @@
 "use client";
 
-import Mangalist from "@/components/Animelist/manga";
+import Mangalist from "@/components/ContentList/manga";
 import HeaderMenu from "@/components/Utilities/HeaderMenu";
 import Pagination from "@/components/Utilities/Pagination";
 import { getAnimeResponse } from "@/libs/api-libs";

@@ -10,7 +10,7 @@ const Header = ({ title, linkHref, linkTitle }) => {
       {linkHref && linkTitle ? (
         <Link
           href={linkHref}
-          className="flex gap-1 items-center md:text-xl text-base underline dark:hover:text-color-yellow-fun hover:text-color-blue-tosca dark:text-color-primary text-color-secondary transition-all"
+          className="flex gap-1 items-center md:text-xl text-base underline dark:hover:text-color-yellow-fun hover:text-color-blue-fun dark:text-color-primary text-color-secondary transition-all"
         >
           <ArrowSquareOut size={22} />
           {linkTitle}

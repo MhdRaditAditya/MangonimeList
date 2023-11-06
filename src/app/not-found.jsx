@@ -6,15 +6,15 @@ const NotFound = () => {
     <div className="min-h-screen max-w-xl mx-auto flex justify-center items-center">
       <div className="row">
         <div className="flex justify-center items-center gap-4">
-          <h3 className="dark:text-color-yellow-fun text-color-blue-tosca text-2xl font-bold">
+          <h3 className="dark:text-color-yellow-fun text-color-blue-fun text-2xl font-bold">
             404 |
           </h3>
           <div className="flex justify-center items-center gap-2">
             <FileSearch
               size={29}
-              className="dark:text-color-yellow-fun text-color-blue-tosca"
+              className="dark:text-color-yellow-fun text-color-blue-fun"
             />
-            <h3 className="dark:text-color-yellow-fun text-color-blue-tosca text-2xl font-bold">
+            <h3 className="dark:text-color-yellow-fun text-color-blue-fun text-2xl font-bold">
               NOT FOUND
             </h3>
           </div>
@@ -22,7 +22,7 @@ const NotFound = () => {
 
         <Link
           href={`/`}
-          className="dark:text-color-yellow-fun text-color-blue-tosca text-2xl font-bold p-8 flex justify-center items-center underline"
+          className="dark:text-color-yellow-fun text-color-blue-fun text-2xl font-bold p-8 flex justify-center items-center hover:underline"
         >
           Back ?
         </Link>

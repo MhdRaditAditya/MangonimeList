@@ -2,7 +2,7 @@
 
 import HeaderMenu from "@/components/Utilities/HeaderMenu";
 import Pagination from "@/components/Utilities/Pagination";
-import Animelist from "@/components/Animelist";
+import Animelist from "@/components/ContentList";
 import { getAnimeResponse } from "@/libs/api-libs";
 import React, { useEffect, useState } from "react";
 

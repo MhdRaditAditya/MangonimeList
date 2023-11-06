@@ -12,18 +12,24 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      brightness: {
+        25: '.25',
+        80: '.8'
+      },
     },
     colors: {
       color: {
-        'blue-dark': '#1F3A5F',
-        'blue-tosca': '#005461',
         'yellow-fun': '#ffc639',
         'card-dark': '#393E46',
         'card-light': '#F2EFE9',
         'dark': '#222831',
         'light': '#e7f4ff',
         'primary': '#eaf0fc',
-        'secondary': '#18181a'
+        'secondary': '#18181a',
+        'thirdy': '#cbd5e1',
+        'purple-fun': '#6b21a8',
+        'blue-fun': '#1d4ed8',
+        'tosca-fun': '#065f46',
       },
     },
   },
