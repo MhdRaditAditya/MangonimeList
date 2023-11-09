@@ -15,7 +15,7 @@ const Mangalist = ({ api }) => {
               <h3 className=" font-bold p-1 ml-2 mt-3">{manga.title}</h3>
               {manga.score ? (
                 <p className=" p-1 ml-2 ">Score: {manga.score}</p>
-              ) : null}
+              ) : <p className=" p-1 ml-2 ">Score: -</p>}
             </div>
             <Image
               src={manga.images.webp.image_url}

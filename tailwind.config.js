@@ -29,7 +29,7 @@ module.exports = {
         'thirdy': '#cbd5e1',
         'purple-fun': '#6b21a8',
         'blue-fun': '#1d4ed8',
-        'tosca-fun': '#065f46',
+        'tosca-fun': '#047857',
       },
     },
   },

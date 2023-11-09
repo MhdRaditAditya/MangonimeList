@@ -22,33 +22,48 @@ img:hover {
   scale: 105%;
 }
 
-.loading {
-  width: 56px;
-  height: 56px;
-  display: grid;
-  border: 7px solid #0000;
-  border-radius: 50%;
-  border-right-color: #ffc639;
-  animation: spinner-a4dj62 1s infinite linear;
+.loader {
+  position: relative;
+  width: 85px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#6b21a8 50px, transparent 0),
+    linear-gradient(#7c3aed 50px, transparent 0),
+    linear-gradient(#4338ca 50px, transparent 0),
+    linear-gradient(#1d4ed8 50px, transparent 0),
+    linear-gradient(#0ea5e9 50px, transparent 0),
+    linear-gradient(#14b8a6 50px, transparent 0),
+    linear-gradient(#065f46 50px, transparent 0);
+  background-position: 0px center, 15px center, 30px center, 45px center,
+    60px center, 75px center, 90px center;
+  animation: rikSpikeRoll 0.65s linear infinite alternate;
 }
 
-.loading::before,
-.loading::after {
-  content: "";
-  grid-area: 1/1;
-  margin: 2.2px;
-  border: inherit;
-  border-radius: 50%;
-  animation: spinner-a4dj62 2s infinite;
-}
-
-.loading::after {
-  margin: 8.9px;
-  animation-duration: 4s;
-}
-
-@keyframes spinner-a4dj62 {
+@keyframes rikSpikeRoll {
+  0% {
+    background-size: 10px 3px;
+  }
+  16% {
+    background-size: 10px 50px, 10px 3px, 10px 3px, 10px 3px, 10px 3px, 10px 3px;
+  }
+  33% {
+    background-size: 10px 30px, 10px 50px, 10px 3px, 10px 3px, 10px 3px,
+      10px 3px;
+  }
+  50% {
+    background-size: 10px 10px, 10px 30px, 10px 50px, 10px 3px, 10px 3px,
+      10px 3px;
+  }
+  66% {
+    background-size: 10px 3px, 10px 10px, 10px 30px, 10px 50px, 10px 3px,
+      10px 3px;
+  }
+  83% {
+    background-size: 10px 3px, 10px 3px, 10px 10px, 10px 30px, 10px 50px,
+      10px 3px;
+  }
   100% {
-    transform: rotate(1turn);
+    background-size: 10px 3px, 10px 3px, 10px 3px, 10px 10px, 10px 30px,
+      10px 50px;
   }
 }

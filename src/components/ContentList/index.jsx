@@ -15,7 +15,9 @@ const Animelist = ({ api }) => {
               <h3 className=" font-bold p-1 ml-2 mt-3">{anime.title}</h3>
               {anime.score ? (
                 <p className=" p-1 ml-2 ">Score: {anime.score}</p>
-              ) : null}
+              ) : (
+                <p className=" p-1 ml-2 ">Score: - </p>
+              )}
             </div>
             <Image
               src={anime.images.webp.image_url}

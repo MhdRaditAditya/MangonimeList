@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <header className="bg-gradient-to-r from-color-purple-fun from-10% via-color-blue-fun via-30% to-color-tosca-fun to-90%">
       <div className="flex md:flex-row flex-col justify-between md:items-center md:p-4 pt-4 pb-2 px-2">
-        <div className="flex justify-between items-center gap-6">
+        <div className="flex justify-between items-center gap-4">
           <Link
             href={"/"}
             className={`${gluten.className} text-color-yellow-fun hover:text-color-primary transition-all md:text-3xl text-xl font-bold `}

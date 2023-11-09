@@ -37,7 +37,7 @@ const VideoPlayer = ({ youtubeId }) => {
   const ButtonOpenTrailer = () => {
     return (
       <button
-        className="fixed bottom-5 right-5 w-40 gap-4  flex dark:text-color-primary text-color-secondary dark:hover:text-color-yellow-fun hover:text-color-blue-tosca transition-all shadow-2xl items-center justify-center"
+        className="fixed bottom-5 right-5 w-40 gap-4  flex dark:text-color-primary text-color-secondary dark:hover:text-color-yellow-fun hover:text-color-blue-fun hover: transition-all shadow-2xl items-center justify-center mb-0"
         onClick={handleTrailerButton}
       >
         View trailer <List size={26} />{" "}
